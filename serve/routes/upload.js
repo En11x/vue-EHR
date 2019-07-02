@@ -53,7 +53,7 @@ router.post('/addImg',upload.single('img'),function(req,res){
        //2.写入的内容
        //3.回调函数
        var a= '/static/upload/'+keepname
-       var b = path.join(__dirname,'../../my_blog/static/upload/'+keepname)
+       var b = path.join(__dirname,'../../ehr/static/upload/'+keepname)
        console.log(b)
        fs.writeFile(b,data,(err)=>{
            if(err){return res.send('写入失败')}
