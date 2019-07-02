@@ -1,0 +1,84 @@
+// 全局的公共样式
+
+// 非标准盒模型，width和height 包含content border padding ，不包含 margin
+*
+    box-sizing: border-box
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) // 这个属性属于iOS（iPhoneone和ipad） 当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景
+
+:after, :before
+    box-sizing: border-box
+
+// 选择选择器,只能设置这两个属性
+::selection
+    color: #ffffff
+    background-color: #262a30
+
+body
+    // 跨平台适应的字体族
+    font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif
+    // 字体清晰度设置，只作用域 osx下高分屏
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    color: #555
+    min-height: 100vh // 设置最小高度为当前可视屏幕高度的1%，当没有内容时，body会被撑开
+    background-color: #fff
+    margin: 0
+    font-size 14px
+
+a
+    text-decoration: none
+    color #555
+
+ul, ol, p, h1, h2, h3, h4, h5, h6
+    margin: 0
+    top: 0
+ul
+    padding 0
+li
+    list-style: none
+
+// 进制图片拖动
+img
+    user-select: none // 适配移动端
+
+// 去除输入框的外部高亮
+input, button, textarea
+    outline: 0
+
+// 移动端解决 Font Boosting 问题, 移动端显示文字较多时，会自动设置文字的大小
+p
+    max-height: 100%
+
+.container
+    width: 700px
+    margin: 0 auto
+
+.inner
+    width: 900px
+    margin: 0 auto
+
+.pull-right
+    float: right
+
+.pull-left
+    float: left
+
+.clearfix
+    &:after
+        clear: both
+
+    &:before
+        content: ''
+        display: table
+
+.line-break
+    word-wrap: break-word // 允许单词换行到下一行
+    white-space: pre-wrap // 保留空白符，但正常换行
+
+@keyframes show
+    from
+        margin-top -10px
+        opacity 0
+    to
+        margin-top 0
+        opacity 1

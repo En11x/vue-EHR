@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='map'>
+  <map id="myMap" style="width: 100%; height: 300px;" latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" circles="{{ circles }}" show-location></map>
+  <view class='item'>
+    <text>当前时间：</text>
+    <text>{{time}}</text>
+  </view>
+  <view class='item'>
+    <text>今日打卡次数：</text>
+    <text class='times'>{{times}}</text>
+  </view>
+  <view class='emp item'>
+    <text>员工ID：</text>
+    <input bindinput="bindKeyInput" placeholder="输入id"/>
+  </view>
+  <view class='item'>
+    <button bindtap='click'>点击打卡</button>
+  </view>
+</view>
