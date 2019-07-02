@@ -17,16 +17,16 @@
 
 登录界面
 
-![1562046198890](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1562046198890.png)
+![1562046198890](https://github.com/pjx1211/vue-EHR/blob/master/screenshot/1562046198890.png)
 
 公司管理
 
-![1562046244668](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1562046244668.png)
+![1562046244668](https://github.com/pjx1211/vue-EHR/blob/master/screenshot/1562046244668.png)
 
 招聘管理
 
-![1562046301107](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1562046301107.png)
+![1562046301107](https://github.com/pjx1211/vue-EHR/blob/master/screenshot/1562046301107.png)
 
 微信小程序员工打卡
 
-![1562046325979](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1562046325979.png)
+![1562046325979](https://github.com/pjx1211/vue-EHR/blob/master/screenshot/1562046325979.png)
